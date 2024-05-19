@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-image: url('fotoMarmol.png');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    color: #333;
+}
+
+header h1 {
+    margin: 10px 0 5px 0;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+header h4 {
+    margin: 0;
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    border-bottom: 2px solid #ffcc00;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #333;
+}
+
+.header-top div {
+    flex: 1;
+}
+
+.header-top div:nth-child(2) {
+    text-align: right;
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.sidebar {
+    flex: 1;
+    min-width: 250px;
+    background-color: #00B3B3;
+    padding: 20px;
+    color: white;
+}
+
+.sidebar .box {
+    padding: 10px 0;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.sidebar .box::after {
+    content: "";
+    display: block;
+    height: 3px;
+    background-color: #ffcc00;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.sidebar .box h2 {
+    padding: 0 10px;
+    font-style: normal;
+}
+
+.sidebar .box p {
+    padding: 0 10px;
+    font-style: italic;
+}
+
+.article {
+    flex: 3;
+    min-width: 300px;
+    padding: 20px;
+}
+
+.article img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.article h2 {
+    font-size: 1.8em;
+    margin: 20px 0;
+}
+
+.article p {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+.article button {
+    float: right;
+    background-color: #ffcc00;
+    color: #000;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.article button:hover {
+    background-color: #ffdd44;
+}
+
+.table-of-contents {
+    margin-top: 20px;
+    padding: 10px 0;
+    position: relative;
+}
+
+.table-of-contents ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.table-of-contents li {
+    margin: 5px 0;
+    font-weight: bold;
+    padding: 0 10px;
+    font-style: italic;
+}
